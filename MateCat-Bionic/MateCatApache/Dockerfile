@@ -75,7 +75,8 @@ COPY prepare.sh /tmp/prepare.sh
 RUN chmod +x /tmp/prepare.sh
 
 WORKDIR /var/www/matecat
-RUN git clone https://github.com/matecat/MateCat.git .
+#RUN git clone https://github.com/matecat/MateCat.git .
+RUN git clone https://github.com/korxz/MateCat.git .
 
 RUN /tmp/prepare.sh
 
